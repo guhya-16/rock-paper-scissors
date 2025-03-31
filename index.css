@@ -1,0 +1,116 @@
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background-color: #000;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+h1 {
+    color: #fff;
+    margin: 20px 0;
+    font-size: 2rem;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+.game-container {
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+    background-color: #1a1a1a;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.choices {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+.choice {
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    font-size: 40px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+.choice:hover {
+    background-color: #4CAF50;
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(76, 175, 80, 0.6);
+}
+.result {
+    margin: 15px 0;
+    font-size: 20px;
+    font-weight: bold;
+    min-height: 30px;
+    color: #4CAF50;
+}
+.scores {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
+.score {
+    font-size: 18px;
+    padding: 8px 20px;
+    background-color: #333;
+    border-radius: 10px;
+}
+.reset-bt{
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s;
+    margin-top: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+.reset-btn:hover {
+    background-color: #d32f2f;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(211, 47, 47, 0.4);
+}
+.choice-display {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+    align-items: center;
+}
+.choice-icon {
+    font-size: 50px;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    border-radius: 50%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+.vs {
+    font-size: 24px;
+    margin: 0 20px;
+    color: #777;
+}
+#player-choice {
+    color: #4CAF50;
+}
+#computer-choice {
+    color: #f44336;
+}
